@@ -67,34 +67,5 @@ describe('Roller class', () => {
       expect(distribution_map.get(3)).toEqual(2);
     });
   });
-  
-
-
   });
-
- 
-
 });
-
-
-
-
-
-
-
-//   describe('distribution', () => {
-//     it('should return a Map with the correct size and values', () => {
-//       roller.roll(2);
-//       roller.roll(2);
-//       roller.roll(4);
-//       const distribution = roller.distribution();
-//       expect(distribution.size).toEqual(6);
-//       expect(distribution.get(1)).toEqual(0);
-//       expect(distribution.get(2)).toEqual(2);
-//       expect(distribution.get(3)).toEqual(0);
-//       expect(distribution.get(4)).toEqual(1);
-//       expect(distribution.get(5)).toEqual(0);
-//       expect(distribution.get(6)).toEqual(0);
-//     });
-//   });
-// });
