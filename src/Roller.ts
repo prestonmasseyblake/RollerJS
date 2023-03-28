@@ -14,7 +14,10 @@ export class Roller {
             this._faces = faces;
             
         }
-        for (let i:number = 0; i < this._faces; i++) {
+        this._distribution = new Map<number, number>();
+        // console.log(this._distribution,"this is distribution");
+        for (let i: number = 0; i < this._faces; i++) {
+            
             this._distribution.set(i, 0);
         }
         this._last = 0;
@@ -57,4 +60,10 @@ export class Roller {
     distribution(): Map<number, number>{
         return this._distribution;
     }
+    // additional functionality to help with testing 
+    get_faces(): number {
+        return this._faces;
+    }
+
+
 } // end of Roller class
